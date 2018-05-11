@@ -27,7 +27,7 @@ module Wiki
     private
 
     def path
-      URI.decode params[:path]
+      CGI.unescape params[:path]
     end
 
     def set_wiki_space
