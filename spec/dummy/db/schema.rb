@@ -10,10 +10,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2016_04_13_040436) do
+ActiveRecord::Schema.define(version: 2018_05_09_101020) do
 
   create_table "users", force: :cascade do |t|
     t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "wiki_page_revisions", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "wiki_page_id"
+    t.string "title"
+    t.text "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_wiki_page_revisions_on_user_id"
+    t.index ["wiki_page_id"], name: "index_wiki_page_revisions_on_wiki_page_id"
+  end
+
+  create_table "wiki_pages", force: :cascade do |t|
+    t.integer "wiki_space_id"
+    t.string "path", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["path"], name: "index_wiki_pages_on_path"
+    t.index ["wiki_space_id"], name: "index_wiki_pages_on_wiki_space_id"
+  end
+
+  create_table "wiki_spaces", force: :cascade do |t|
+    t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
