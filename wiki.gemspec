@@ -7,13 +7,16 @@ require 'wiki/version'
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = 'wiki'
+  s.name        = 'yaw'
   s.version     = Wiki::VERSION
   s.authors     = ['less team']
   s.email       = ['less@less.works']
   s.homepage    = 'https://less.works'
   s.summary     = 'It manages a library of wiki'
-  s.description = 'It manages a library of wiki'
+  s.description = %{
+    Unlike a complete wiki engine, yaw is a wiki library to be
+    embeded in your rails application.
+  }
 
   s.files = Dir[
     '{app,config,db,lib}/**/*',

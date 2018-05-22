@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    wiki (0.0.1)
+    yaw (0.0.1)
       kramdown
 
 GEM
@@ -258,7 +258,7 @@ DEPENDENCIES
   simple_form
   sqlite3
   test-unit
-  wiki!
+  yaw!
 
 BUNDLED WITH
    1.16.0
