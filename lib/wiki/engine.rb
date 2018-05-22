@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../../../mountable/lib/mountable'
+require_relative '../mountable/lib/mountable'
 
 module Wiki
   # :nodoc:
