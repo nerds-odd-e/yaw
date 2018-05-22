@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-module Wiki
+module Yaw
   RSpec.describe WikiPageController, type: :controller do
     routes { Engine.routes }
     let(:page) { create :wiki_page }

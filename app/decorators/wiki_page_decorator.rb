@@ -10,7 +10,7 @@ class WikiPageDecorator < Draper::Decorator
       matched = match[link_reg, 1]
       options = { class: 'internal' }
       options[:class] = 'absent' if find_sibling(matched).blank?
-      h.link_to matched, h.wiki.wiki_space_wiki_page_path(wiki_space, matched), options
+      h.link_to matched, h.yaw.wiki_space_wiki_page_path(wiki_space, matched), options
     end.html_safe
     # rubocop:enable all
   end

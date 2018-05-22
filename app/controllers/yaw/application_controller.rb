@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Wiki
+module Yaw
   class ApplicationController < ::ApplicationController
     layout 'wiki'
   end

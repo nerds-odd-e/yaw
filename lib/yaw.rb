@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'wiki/engine'
+require 'yaw/engine'
 
-module Wiki
+module Yaw
   # :nodoc:
   class C
   end

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-module Wiki
-  class WikiPageController < Wiki::ApplicationController
+module Yaw
+  class WikiPageController < Yaw::ApplicationController
     layout 'wiki'
     before_action :set_wiki_space
     before_action :set_object, only: %i[show edit update]

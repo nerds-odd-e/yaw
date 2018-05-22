@@ -3,15 +3,15 @@
 $LOAD_PATH.push File.expand_path('lib', __dir__)
 
 # Maintain your gem's version:
-require 'wiki/version'
+require 'yaw/version'
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = 'yaw'
-  s.version     = Wiki::VERSION
+  s.version     = Yaw::VERSION
   s.authors     = ['less team']
-  s.email       = ['less@less.works']
-  s.homepage    = 'https://less.works'
+  s.email       = ['developers@less.works']
+  s.homepage    = 'https://github.com/nerds-odd-e/yaw'
   s.summary     = 'It manages a library of wiki'
   s.description = %{
     Unlike a complete wiki engine, yaw is a wiki library to be

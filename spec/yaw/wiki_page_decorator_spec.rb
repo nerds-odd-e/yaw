@@ -8,7 +8,7 @@ describe WikiPageDecorator, type: :decorator do
   context 'the page with a link' do
     before { subject.body = '[[something here]]' }
     its(:render_body) { should have_link('something here') }
-    its(:render_body) { should have_link(href: h.wiki.wiki_space_wiki_page_path(subject.wiki_space, 'something here')) }
+    its(:render_body) { should have_link(href: h.yaw.wiki_space_wiki_page_path(subject.wiki_space, 'something here')) }
     its(:render_body) { should have_link(class: 'absent') }
 
     context 'when the linked page exists' do

@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  mount Wiki::Engine => '/wiki'
+  mount Yaw::Engine => '/wiki'
 end

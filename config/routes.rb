@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-Wiki::Engine.routes.draw do
+Yaw::Engine.routes.draw do
   resources :wiki_spaces, path: '/', only: [] do
     nested do
       post 'wiki' => 'wiki_page#create', as: 'wiki_pages'

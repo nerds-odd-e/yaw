@@ -2,7 +2,7 @@
 
 require_relative '../mountable/lib/mountable'
 
-module Wiki
+module Yaw
   # :nodoc:
   class Engine < ::Rails::Engine
     enginize
