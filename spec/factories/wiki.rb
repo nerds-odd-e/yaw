@@ -13,7 +13,7 @@ FactoryBot.define do
     name 'tom'
   end
 
-  factory :wiki_page do
+  factory :wiki_page, class: 'Yaw::WikiPage' do
     wiki_space
     path
     user
@@ -21,7 +21,7 @@ FactoryBot.define do
     body   'is a page'
   end
 
-  factory :wiki_space do
+  factory :wiki_space, class: 'Yaw::WikiSpace' do
     title
   end
 end

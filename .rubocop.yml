@@ -1,2 +1,30 @@
-inherit_from:
-  - ../../.rubocop.yml
+Rails:
+  Enabled: true
+AllCops:
+  TargetRubyVersion: "2.4"
+  Exclude:
+    - 'spec/dummy/**/*'
+    - '**/spec/dummy/**/*'
+    - 'vendor/**/*'
+    - 'temp/**/*'
+    - 'wiki/**/*'
+    - '**/db/**/*'
+    - '**/bin/**/*'
+    - 'Vagrantfile'
+Documentation:
+  Enabled: false
+Metrics/LineLength:
+  Max: 150
+Metrics/BlockLength:
+  ExcludedMethods: ['describe', 'context', 'shared_examples', 'shared_examples_for', 'define', 'namespace']
+Style/NumericPredicate:
+  EnforcedStyle: comparison
+Rails/SkipsModelValidations:
+  Exclude:
+    - 'spec/**/*'
+Rails/UnknownEnv:
+  Environments:
+    - production
+    - development
+    - test
+    - staging

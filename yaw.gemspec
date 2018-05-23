@@ -13,10 +13,10 @@ Gem::Specification.new do |s|
   s.email       = ['developers@less.works']
   s.homepage    = 'https://github.com/nerds-odd-e/yaw'
   s.summary     = 'It manages a library of wiki'
-  s.description = %{
+  s.description = %(
     Unlike a complete wiki engine, yaw is a wiki library to be
     embeded in your rails application.
-  }
+  )
 
   s.files = Dir[
     '{app,config,db,lib}/**/*',
@@ -25,7 +25,10 @@ Gem::Specification.new do |s|
     'README.rdoc']
   s.test_files = Dir['spec/**/*']
 
+  s.add_dependency 'ckeditor'
+  s.add_dependency 'draper'
   s.add_dependency 'kramdown'
+  s.add_dependency 'simple_form'
 
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'database_cleaner'
