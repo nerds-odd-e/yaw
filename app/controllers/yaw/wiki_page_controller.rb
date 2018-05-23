@@ -31,7 +31,7 @@ module Yaw
     end
 
     def set_wiki_space
-      @wiki_space = WikiSpace.find_by!(title: params[:wiki_space_id])
+      @wiki_space = ::Yaw::WikiSpace.find_by!(title: params[:wiki_space_id])
     end
 
     def set_object

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    yaw (0.0.1)
+    yaw (0.0.2)
       ckeditor
       draper
       kramdown
